@@ -1,0 +1,224 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication5.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Eduline.az</title>
+    <link rel="stylesheet" type="text/css" href="Content2/eduline.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li>
+                    <img src="Content2/image/menuphoto.png"></li>
+                <li><i class="fas fa-envelope"></i>Bize yazin<p>info@eduline.az</p>
+                </li>
+                <li><i class="fas fa-phone-square-alt"></i>Bize yazin<p>info@eduline.az</p>
+                </li>
+                <li><i class="far fa-building"></i>Bize yazin<p>info@eduline.az</p>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.aspx">Ana səhifə</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="About.aspx">Haqqımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tedbirler.aspx">Tədbirlər</a>
+                </li>
+                <li>
+                    <!-- Dropdown -->
+                    <div class="abc1">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Xidmətlərimiz
+                        </button>
+                        <div style="margin-left: 28%; margin-top: -10px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="ul" runat="server">
+     
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="xeberlerzahir.aspx">Xəbərlər</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Elaqe.aspx">Əlaqə</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="muellimler.aspx">Müəllimlər</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Gallery.aspx">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <asp:ContentPlaceHolder runat="server" ID="Eduline">
+    </asp:ContentPlaceHolder>
+
+    <div class="son">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="ml-1" width="250" src="Content2/image/menuphoto.png"><br>
+                    <br>
+                    <p class="ml-1">Təhsilinizdəki pillələri birlikdə aşaq...</p>
+                    <br>
+                    <br>
+                    <ul type="none" id="ikonlare">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; Nizami küç. 203B</li>
+                        <li><i class="fas fa-mobile-alt"></i>&nbsp; 0557670790</li>
+                        <li><i class="fas fa-phone-alt"></i>&nbsp; 0123103343</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp;info@eduline.az</li>
+                        <li><i class="fas fa-globe-asia"></i>&nbsp; https://www.eduline.az</li>
+                    </ul>
+                    <br>
+                    <p class="ml-1">Bizi izləyin</p>
+                    <br>
+                    <a href="#" class="fa fa-facebook ml-1"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <div class="col-sm-3">
+                    <p class="para ml-3">Xidmetler</p>
+                    <ul type="none">
+                        <li class="li">
+                            <div class="left">
+                                <img height="100" src="Content2/image/xidmetphoto.jpg">
+                            </div>
+                            <div class="right mt-3 ml-3">
+                                <p>
+                                    <a href="xidmetler.aspx">Fransız dili hazı..</a>
+                                    <span>Fev 21,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="left">
+                                <img height="100" src="Content2/image/xidmetphoto.jpg">
+                            </div>
+                            <div class="right mt-3 ml-3">
+                                <p>
+                                    <a href="xidmetler.aspx">Ingilis dili hazı..</a>
+                                    <span>Mart 21,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="left">
+                                <img height="100" src="Content2/image/xidmetphoto.jpg">
+                            </div>
+                            <div class="right mt-3 ml-3">
+                                <p>
+                                    <a href="xidmetler.aspx">Rus dili hazı..</a>
+                                    <span>Mart 23,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="left">
+                                <img height="100" src="Content2/image/xidmetphoto.jpg">
+                            </div>
+                            <div class="right mt-3 ml-3">
+                                <p>
+                                    <a href="xidmetler.aspx">Alman dili hazı..</a>
+                                    <span>Dek 17,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="left">
+                                <img height="100" src="Content2/image/xidmetphoto.jpg">
+                            </div>
+                            <div class="right mt-3 ml-3">
+                                <p>
+                                    <a href="xidmetler.aspx">Xaricdə Təhsil</a>
+                                    <span>Fev 21,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <p class="para" id="xeberler">Xəbərlər</p>
+                    <ul type="none">
+                        <li class="li">
+                            <div class="left">
+                                <img class="news" height="90" src="Content2/image/footxeber.jpg">
+                            </div>
+                            <div class="right mt-3 ml-4">
+                                <p>
+                                    <a class="kkb" href="xeber.aspx">Free Conversa..</a>
+                                    <span>Fev 19,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="left">
+                                <img class="news" height="90" src="Content2/image/footxeber.jpg">
+                            </div>
+                            <div class="right mt-3 ml-4">
+                                <p>
+                                    <a class="kkb" href="xeber.aspx">"Xaricdə Təsili..</a>
+                                    <span>May 13,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="li">
+                            <div class="left">
+                                <img class="news" height="90" src="Content2/image/footxeber.jpg">
+                            </div>
+                            <div class="right mt-3 ml-4">
+                                <p>
+                                    <a class="kkb" href="xeber.aspx">İngilis dili..</a>
+                                    <span>Noy 28,2018</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <p class="para" id="xeberler3">Tədbirlər</p>
+                    <ul type="none" runat="server" id="tedbirs">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+            <div class="container">
+                <div class="wow">
+                    <div class="col-sm-6 wow1"><span class="mt-4">MilliSoft ©2018 | Bütün hüquqlar qorunur...</span></div>
+                    <div class="col-sm-6 footicons">
+                        <a href="#" class="fa fa-facebook sonicon "></a>
+                        <a href="#" class="fa fa-twitter sonicon"></a>
+                        <a href="#" class="fa fa-instagram sonicon"></a>
+                        <a href="#" class="fa fa-youtube sonicon"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="Content2/eduline.js"></script>
+</body>
+</html>
